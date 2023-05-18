@@ -37,7 +37,15 @@ export default{
             name: 'description',
             title: 'Description',
             type: 'string',
-         } 
+         } ,
+         {
+            name: 'category',
+            title: 'Category',
+            type: 'string',
+            options: {
+              list: ['Hot Deals' , 'Pants', 'Jumpsuits','Blouses','Skirts','Two Pieces', 'Dresses', 'Blazers']
+            }
+          }
         
     ]
 
