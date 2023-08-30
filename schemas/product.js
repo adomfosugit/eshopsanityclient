@@ -38,6 +38,9 @@ export default{
             title: 'Description',
             type: 'string',
          } ,
+         
+         
+       
          {
             name: 'category',
             title: 'Category',

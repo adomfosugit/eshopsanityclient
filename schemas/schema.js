@@ -4,6 +4,9 @@ import createSchema from 'part:@sanity/base/schema-creator'
 import schemaTypes from 'all:part:@sanity/base/schema-type'
 import product from './product'
 import banner from './banner'
+import rate from './rate'
+import order from './order'
+import cartItems from './cartItems'
 // We import object and document schemas
 
 
@@ -14,7 +17,7 @@ export default createSchema({
   // Then proceed to concatenate our document type
   // to the ones provided by any plugins that are installed
   types: schemaTypes.concat([
-    product,banner
+    product,banner,rate,order,cartItems
     
    
     
