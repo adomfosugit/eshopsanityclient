@@ -10,27 +10,34 @@ export default{
         type: 'string',
       },
       {
-        title: 'Cart Items',
-        name: 'cartItems',
-        type: 'array',
-        of: [{ type: 'reference', to:[{type:'product'}] }], // Create another schema for cart items
+        title: 'Created at',
+        name: 'createdAt',
+        type: 'datetime'
+      },
+      {
+        title: 'Payment Method',
+        name: 'paymentMethod',
+        type: 'string',
+        
       },
       {
         title: 'Shipping Details',
         name: 'shippingDetails',
-        type: 'object',
-        fields: [
-          { title: 'Name', name: 'name', type: 'string' },
-          { title: 'Address', name: 'address', type: 'string' },
-          { title: 'Phone', name: 'phone', type: 'string' },
-        ],
+        type: 'string',
+        
+      },
+      {
+        title: 'Cart Details',
+        name: 'cartsummary',
+        type: 'string',
+        
       },
       {
         name: 'stage',
         title: 'Stage',
         type: 'string',
         options: {
-          list: ['Order Confirmed', 'Processing', 'Shipped', 'Out of Delivery', 'On Hold', 'Delayed', 'Completed']
+          list: ['Processing','Order Confirmed','Shipped', 'Out of Delivery', 'On Hold', 'Delayed', 'Completed']
         }
       }
     ],
